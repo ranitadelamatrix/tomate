@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>CityShop</title>
+    <link href="./assets/img/logo/favicon_io/favicon.ico" rel="icon">
+   
+
+    <link href="./assets/css/styles.css" rel="stylesheet">
+    <link href="./assets/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <!--Navegador-->
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">CityShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/html/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/html/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./assets/html/contactenos.html">Contactenos</a>
+                        </li>
+
+                    </ul>
+                    <!--FORMULARIO-->>
+                    <form class="d-flex" id="formulario-princippal" method="post">
+                        <button  class="btn btn-danger px-4" type="button" onclick="document.getElementById('id01').style.display='block'"><i class="bi bi-person"></i> Login</button>&nbsp;&nbsp;
+                        <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
+                            Carrito
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">
+                                <input class="colorFondo text-center" type="text" id="cantidadtotales" value ="0" max="10" min ="1" style="width: 30px;">
+                            </span>
+                        </button>
+
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
+                                <div class="card">
+                                    <!-- Funko 1 -->
+                                    <div class="card-body d-flex" id="productos-carrito-funko1"></div>
+                                    <div class="card-body d-flex" id="total-funko1"></div>
+                                    <!-- Funko 2 -->
+                                    <div class="card-body d-flex" id="productos-carrito-funko2"></div>
+                                    <div class="card-body d-flex" id="total-funko2"></div>
+                                    <!-- Funko 3 -->
+                                    <div class="card-body d-flex" id="productos-carrito-funko3"></div>
+                                    <div class="card-body d-flex" id="total-funko3"></div>
+                                </div>
+
+                                <div id="total" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="descuento" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="total-descuento" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="btn-pago-eliminar" class="d-flex align-items-end border-top p-3 container">
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Catalogo-->
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="fw-light text-white">CityShop</h1>
+                    <p class="lead text-white">Todas tus compras en un sólo lugar !!!</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center pb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt saepe eos suscipit placeat animi nam doloribus quis nisi beatae officia eligendi unde, in quam harum nemo ducimus perspiciatis enim?</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <!--FUNKO 1-->
+                    <div class="col">
+                        <div class="card shadow-sm text-center">
+                            <a class="text-center" href="#">
+                                <img src="./assets/img/img_pikachu.jpg" class="tamagnoImagenes productoVisible" alt="">
+                            </a>
+
+                            <div class="card-body">
+                                <p class="card-text text-center"><b>Producto 1</b></p>
+                                <p class="text-center small" id="precio-funko1"> $10.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group boton-centrado">
+                                        <input type="button" name="funko1" id="btn-funko1" class="btn btn-danger" onclick="agregarProducto(1)" value="Agregar al carro">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FUNKO 2-->
+                    <div class="col">
+                        <div class="card shadow-sm text-center">
+                            <a class="text-center" href="./assets/html/funko2.html">
+                                <img src="./assets/img/img_charmander.jpg" class="tamagnoImagenes productoVisible" alt="">
+                            </a>
+                            <div class="card-body">
+                                <p class="card-text text-center"><b>Funko Charmander</b></p>
+                                <p class="text-center small" id="precio-funko2"> $20.000</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group boton-centrado">
+                                        <input type="button" name="funko2" id="btn-funko2" class="btn btn-danger" onclick="agregarProducto(2)" value="Agregar al carro">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FUNKO 3-->
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <a class="text-center" href="./assets/html/funko3.html">
+                                <img src="./assets/img/img_lapras.jpg" class="tamagnoImagenes productoVisible" alt="">
+                            </a>
+
+                            <div class="card-body">
+                                <p class="card-text text-center" id="precio-funko1"><b>Funko Lapras</b></p>
+                                <p class="text-center small"> $30.000</p>
+                                <div class="btn-group boton-centrado">
+                                    <input type="button" name="funko3" id="btn-funko3" class="btn btn-danger" onclick="agregarProducto(3)" value="Agregar al carro">
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+        </div>
+    </main>    
+
+    <!-- Login -->
+ 
+    <div id="id01" class="modal-1">
+        <form class="modal-content-1 animate" action="#" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <img src="./assets/img/img_avatar.jpg" alt="Avatar" class="avatar">
+            </div>
+            <div class="container">
+                <table class="table">
+                    <tr>
+                        <td><label for="uname"><b>Nombre</b></label></td>
+                        <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="psw"><b>Password</b></label></td>
+                        <td><input class="login-req" type="password" placeholder="Ingrese Password" name="psw" required></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><button type="submit" class="btn btn-success btn-loggin">Login</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger btn-loggin">Cancel</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span><button type="button" class="btn btn-sm btn-success">Ver más productos</button></span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <p class="float-end mb-1">
+                    <a href="#" class="btn btn-sm btn-dark">Subir</a>
+                </p>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>ATRÁPALOS
+                        </h6>
+                        <p class="text-justify">Nuestro propósito es llenar tu colección y cumplir tus sueños de infancia</p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Productos
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Pikachu</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Charmander</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Lapras</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">MI CUENTA</h6>
+                        <p><a href="#!" class="text-reset text-decoration-none">Inicia sesión</a></p>
+                        <p><a href="#!" class="text-reset text-decoration-none">Registrarse</a></p>
+                        <p><a href="#!" class="text-reset text-decoration-none">Carrito de compras</a></p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+                        <p><i class="fas fa-home me-3"></i>
+                            BUENOS AIRES 1028, Villa María, Argentina.</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i> jorge.cityshop@gmail.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +549 353 401-1698</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo & María Victoria </a>
+        </div>
+        <!-- Copyright -->
+    </footer>  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/offcanvas.js"></script>
+</body>
+</html>
