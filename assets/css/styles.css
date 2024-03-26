@@ -17,5 +17,11 @@ main {
 a:hover{
     background-color: lightblue;
 }
-
+.angkor-regular {
+    color: white;
+    font-family: "Angkor", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 
