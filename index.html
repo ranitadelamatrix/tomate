@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-vhAx5VBn5qQiqKrgrkpGytQVd5rP0jqqFv8WvUGY8LoTJw8ULZ4c7zvSIroU2Ot8NUyFpTX+zaqmYks9kA2Jbg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <title>CityShop</title>
     <link href="./assets/img/logo/favicon_io/favicon.ico" rel="icon">
 
     <!--estilos de letras g fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Angkor&family=Madimi+One&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-   <!---estilo letra presentacion--->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Angkor&family=DM+Serif+Display:ital@0;1&family=Madimi+One&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Angkor&family=Madimi+One&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
+    <!---estilo letra presentacion--->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Angkor&family=DM+Serif+Display:ital@0;1&family=Madimi+One&family=Oswald:wght@200..700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
     <link href="./assets/css/styles.css" rel="stylesheet">
     <link href="./assets/css/login.css" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <!--Navegador-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html" >CityShop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="./index.html">CityShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -47,20 +60,26 @@
                         </li>
 
                     </ul>
-                    <!--FORMULARIO-->>
+                    <!--FORMULARIO-->
                     <form class="d-flex" id="formulario-princippal" method="post">
-                        <button  class="btn btn-danger px-4" type="button" onclick="document.getElementById('id01').style.display='block'"><i class="bi bi-person"></i> Login</button>&nbsp;&nbsp;
-                        <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
+                        <button class="btn btn-danger px-4" type="button"
+                            onclick="document.getElementById('id01').style.display='block'"><i class="bi bi-person"></i>
+                            Iniciar sesión</button>&nbsp;&nbsp;
+                        <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
                             Carrito
                             <span class="badge bg-dark text-white ms-1 rounded-pill">
-                                <input class="colorFondo text-center" type="text" id="cantidadtotales" value ="0" max="10" min ="1" style="width: 30px;">
+                                <input class="colorFondo text-center" type="text" id="cantidadtotales" value="0"
+                                    max="10" min="1" style="width: 30px;">
                             </span>
                         </button>
 
-                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
                                 <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
-                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
                                 <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
@@ -78,7 +97,8 @@
 
                                 <div id="total" class="d-flex align-items-end border-top p-3 container"> </div>
                                 <div id="descuento" class="d-flex align-items-end border-top p-3 container"> </div>
-                                <div id="total-descuento" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="total-descuento" class="d-flex align-items-end border-top p-3 container">
+                                </div>
                                 <div id="btn-pago-eliminar" class="d-flex align-items-end border-top p-3 container">
 
                                 </div>
@@ -95,7 +115,7 @@
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1  class="angkor-regular">CityShop</h1>
+                    <h1 class="angkor-regular">CityShop</h1>
                     <p class="lead text-white">Todas tus compras en un sólo lugar !!!</p>
                 </div>
             </div>
@@ -104,8 +124,12 @@
         <div class="album py-5 bg-light">
             <div class="container">
                 <h2 class="text-center pb-4" id="dm-serif">¡Bienvenidos a CityShop!
-
-                    En CityShop, nos enorgullece ofrecer una experiencia de compra única para nuestros clientes; somos tu destino desde artículos para el hogar hasta regalos únicos, pasando por productos de decoración y accesorios de moda, en CityShop encontrarás todo lo que estás buscando y mucho más.</h2>
+                    En CityShop, nos enorgullece ofrecer una experiencia de compra única para nuestros clientes; somos
+                    tu destino desde artículos para el hogar hasta regalos únicos, pasando por productos de decoración y
+                    accesorios de moda, en CityShop encontrarás todo lo que estás buscando y mucho más. <br></h2>
+                <div class="album py-5 bg-light">
+                    <h2 class="text-center pb-4" id="dm-serif"> Nuestras Ofertas</h2>
+                </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
                     <!--FUNKO 1-->
@@ -120,7 +144,8 @@
                                 <p class="text-center small" id="precio-funko1"> $10.000</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group boton-centrado">
-                                        <input type="button" name="funko1" id="btn-funko1" class="btn btn-danger" onclick="agregarProducto(1)" value="Agregar al carro">
+                                        <input type="button" name="funko1" id="btn-funko1" class="btn btn-danger"
+                                            onclick="agregarProducto(1)" value="Agregar al carro">
                                     </div>
                                 </div>
                             </div>
@@ -131,14 +156,16 @@
                     <div class="col">
                         <div class="card shadow-sm text-center">
                             <a class="text-center" href="./assets/html/funko2.html">
-                                <img src="./assets/img/img_charmander.jpg" class="tamagnoImagenes productoVisible" alt="">
+                                <img src="./assets/img/img_charmander.jpg" class="tamagnoImagenes productoVisible"
+                                    alt="">
                             </a>
                             <div class="card-body">
                                 <p class="card-text text-center"><b>Rollers</b></p>
                                 <p class="text-center small" id="precio-funko2"> $20.000</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group boton-centrado">
-                                        <input type="button" name="funko2" id="btn-funko2" class="btn btn-danger" onclick="agregarProducto(2)" value="Agregar al carro">
+                                        <input type="button" name="funko2" id="btn-funko2" class="btn btn-danger"
+                                            onclick="agregarProducto(2)" value="Agregar al carro">
                                     </div>
                                 </div>
                             </div>
@@ -156,38 +183,43 @@
                                 <p class="card-text text-center" id="precio-funko1"><b>Balon de Basquet</b></p>
                                 <p class="text-center small"> $30.000</p>
                                 <div class="btn-group boton-centrado">
-                                    <input type="button" name="funko3" id="btn-funko3" class="btn btn-danger" onclick="agregarProducto(3)" value="Agregar al carro">
+                                    <input type="button" name="funko3" id="btn-funko3" class="btn btn-danger"
+                                        onclick="agregarProducto(3)" value="Agregar al carro">
                                 </div>
                             </div>
                         </div>
-                    </div>   
+                    </div>
                 </div>
             </div>
         </div>
-    </main>    
+    </main>
 
     <!-- Login -->
- 
+
     <div id="id01" class="modal-1">
         <form class="modal-content-1 animate" action="#" method="post">
             <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                    title="Close Modal">&times;</span>
                 <img src="./assets/img/img_avatar.jpg" alt="Avatar" class="avatar">
             </div>
             <div class="container">
                 <table class="table">
                     <tr>
                         <td><label for="uname"><b>Nombre</b></label></td>
-                        <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required></td>
+                        <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required>
+                        </td>
                     </tr>
                     <tr>
                         <td><label for="psw"><b>Password</b></label></td>
-                        <td><input class="login-req" type="password" placeholder="Ingrese Password" name="psw" required></td>
+                        <td><input class="login-req" type="password" placeholder="Ingrese Password" name="psw" required>
+                        </td>
                     </tr>
                     <tr>
                         <td>&nbsp;</td>
-                        <td><button type="submit" class="btn btn-success btn-loggin">Login</button>
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger btn-loggin">Cancel</button>
+                        <td><button type="submit" class="btn btn-success btn-loggin">Iniciar sesión </button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                class="btn btn-danger btn-loggin">Cancelar</button>
                         </td>
                     </tr>
                 </table>
@@ -196,14 +228,16 @@
     </div>
 
 
+
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
             <div class="me-5 d-none d-lg-block">
-                <span><button type="button" class="btn btn-sm btn-success">Ver más productos</button></span>
+                <span><a href="./assets/html/productos.html" class="btn btn-sm btn-success">Ver más productos</a></span>
             </div>
+
             <!-- Left -->
 
             <!-- Right -->
@@ -243,8 +277,9 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>CityShop                        </h6>
-                        <p class="text-justify">Nuestro propósito es llenar tu colección y cumplir tus sueños de infancia</p>
+                            <i class="fas fa-gem me-3"></i>CityShop
+                        </h6>
+                        <p class="text-justify">"Juguetes para crear sonrisas, fomentar sueños y unir familias."</p>
                     </div>
                     <!-- Grid column -->
 
@@ -254,57 +289,57 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Productos
                         </h6>
+
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Pikachu</a>
+                            <a href="#!" class="text-reset text-decoration-none">Super Promos</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Charmander</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Lapras</a>
+                            <a href="#!" class="text-reset text-decoration-none">Ofertas</a>
                         </p>
                     </div>
-                    <!-- Grid column -->
 
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">MI CUENTA</h6>
-                        <p><a href="#!" class="text-reset text-decoration-none">Inicia sesión</a></p>
-                        <p><a href="#!" class="text-reset text-decoration-none">Registrarse</a></p>
-                        <p><a href="#!" class="text-reset text-decoration-none">Carrito de compras</a></p>
-                    </div>
-                    <!-- Grid column -->
-
-                    <!-- Grid column -->
+                    <!-- Contáctenos -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Contáctenos</h6>
                         <p><i class="fas fa-home me-3"></i>
-                            BUENOS AIRES 1028, Villa María, Argentina.</p>
+                            BUENOS AIRES 1028, Villa María , Argentina.</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i> jorge.cityshop@gmail.com
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:jorge.cityshop@gmail.com" style="color: black;">jorge.cityshop@gmail.com</a>
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> +549 353 401-1698</p>
+                        <p>
+                            <a href="https://wa.me/5493534011698?text=Hola,%20gracias%20por%20comunicarte%20con%20CityShop,%20¿cuál%20es%20tu%20consulta?"
+                                style="color: black;">
+                                <i class="bi bi-whatsapp me-3"></i> 353 401-1698
+                            </a>
+                        </p>
                     </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+               
             </div>
         </section>
         <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo & María Victoria </a>
+        <div class="text-center p-4" style="background-color: black;">
+            © 2024 <a class="text-reset fw-bold text-decoration-none"
+                href="https://ranitadelamatrix.github.io/portafolio1/">Gastón Trejo </a> & <a
+                href="https://github.com/MariaVictoria"><img src="./assets/img/logo/logo_MV/sin_fondo/white.png"
+                    width="150" alt="logoMV"></a>
         </div>
         <!-- Copyright -->
-    </footer>  
+    </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
     <script src="./assets/js/offcanvas.js"></script>
 </body>
+
 </html>
