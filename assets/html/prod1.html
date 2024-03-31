@@ -63,15 +63,15 @@
                             <div class="offcanvas-body">
                                 <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
                                 <div class="card">
-                                    <!-- Funko 1 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko1"></div>
-                                    <div class="card-body d-flex" id="total-funko1"></div>
-                                    <!-- Funko 2 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko2"></div>
-                                    <div class="card-body d-flex" id="total-funko2"></div>
-                                    <!-- Funko 3 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko3"></div>
-                                    <div class="card-body d-flex" id="total-funko3"></div>
+                                    <!-- prodo 1 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prodo1"></div>
+                                    <div class="card-body d-flex" id="total-prodo1"></div>
+                                    <!-- prodo 2 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prodo2"></div>
+                                    <div class="card-body d-flex" id="total-prodo2"></div>
+                                    <!-- prodo 3 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prodo3"></div>
+                                    <div class="card-body d-flex" id="total-prodo3"></div>
                                 </div>
 
                                 <div id="total" class="d-flex align-items-end border-top p-3 container"> </div>
@@ -90,7 +90,7 @@
     </header>
 
     <!--Catalogo-->
-    <!--FUNKO 1-->
+    <!--prodO 1-->
     <!--Catalogo-->
     <main>
 
@@ -98,7 +98,7 @@
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
                     <h1 class="angkor-regular">CityShop</h1>
-                    <p class="lead text-white">Funkos de Pokemon para tu niño interior.</p>
+                    <p class="lead text-white">Todos.</p>
                 </div>
             </div>
         </section>
@@ -108,19 +108,19 @@
             <div class="container">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                    <!--FUNKO 1-->
+                    <!--prodO 1-->
                     <div class="col-4">
                         <div class="card shadow-sm text-center">
                             <a class="text-center" href="#">
-                                <img src="../img/img_pikachu.jpg" class="tamagnoImagenes productoVisible" alt="">
+                                <img src="../img/caminador.jpg" class="tamagnoImagenes productoVisible" alt="">
                             </a>
 
                             <div class="card-body">
-                                <p class="card-text text-center"><b>Funko Pikachu</b></p>
+                                <p class="card-text text-center"><b>Caminador</b></p>
                                 <p class="text-center small"> $20.990</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="btn-group boton-centrado">
-                                        <input type="button" name="funko1" id="btn-funko1" class="btn btn-danger"
+                                        <input type="button" name="prodo1" id="btn-prodo1" class="btn btn-danger"
                                             onclick="agregarProducto(1)" value="Agregar al carro">
                                     </div>
                                 </div>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                     <div class="col-8">
-                        <h2>Funko Pikachu</h2>
+                        <h2>prodo </h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -205,8 +205,7 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             <i class="fas fa-gem me-3"></i>CityShop
                         </h6>
-                        <p class="text-justify">Nuestro propósito es llenar tu colección y cumplir tus sueños de
-                            infancia</p>
+                        <p class="text-justify">"Juguetes para crear sonrisas, fomentar sueños y unir familias."</p>
                     </div>
                     <!-- Grid column -->
 
@@ -216,14 +215,16 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Productos
                         </h6>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Pikachu</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Charmander</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Lapras</a>
+                        
+                        <p> <ul>
+                            
+                            <li> <a href="bazar.html" class="text-reset text-decoration-none">Bazar</a></li>
+                            <li><a href="libreria.html" class="text-reset text-decoration-none">Librería</a></li>
+                            <li><a href="juguetes.html" class="text-reset text-decoration-none">Juguetería</a></li>
+                            <li><a href="ofertas.html" class="text-reset text-decoration-none">Ofertas</a></li>
+                        
+                            
+                        </ul>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -237,7 +238,6 @@
                         <p><a href="#!" class="text-reset text-decoration-none">Carrito de compras</a></p>
                     </div>
                     <!-- Grid column -->
-
                     <!-- Contáctenos -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
@@ -256,25 +256,30 @@
                         </p>
                     </div>
                 </div>
-               
+
             </div>
         </section>
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo & María Victoria </a>
+        <div class="text-center p-4" style="background-color: black;">
+            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo </a> & <a
+                href="https://github.com/MariaVictoria"><img src="../img/logo/logo_MV/sin_fondo/white.png" width="150"
+                    alt="logoMV"></a>
         </div>
         <!-- Copyright -->
     </footer>
 
+    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <!-- jQuery -->
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-    <script src="../js/offcanvas2.js"></script>
+    <!-- Scripts personalizados -->
+    <script src="./assets/js/offcanvas.js"></script>
 </body>
 
 </html>
