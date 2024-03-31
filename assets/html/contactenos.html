@@ -9,10 +9,20 @@
     <title>CityShop</title>
     <link href="../favicon_io/favicon.ico" rel="icon">
     
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--estilos de letras g fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Angkor&family=Madimi+One&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
+
     <link href="../css/styles.css" rel="stylesheet">
 </head>
 
@@ -42,7 +52,7 @@
                         </li>
 
                     </ul>
-                    <!--FORMULARIO-->>
+                    <!--FORMULARIO-->
                     <form class="d-flex" id="formulario-princippal" method="post">
                         <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
@@ -63,15 +73,15 @@
                             <div class="offcanvas-body">
                                 <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
                                 <div class="card">
-                                    <!-- Funko 1 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko1"></div>
-                                    <div class="card-body d-flex" id="total-funko1"></div>
-                                    <!-- Funko 2 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko2"></div>
-                                    <div class="card-body d-flex" id="total-funko2"></div>
-                                    <!-- Funko 3 -->
-                                    <div class="card-body d-flex" id="productos-carrito-funko3"></div>
-                                    <div class="card-body d-flex" id="total-funko3"></div>
+                                    <!-- prod 1 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod1"></div>
+                                    <div class="card-body d-flex" id="total-prod1"></div>
+                                    <!-- prod 2 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod2"></div>
+                                    <div class="card-body d-flex" id="total-prod2"></div>
+                                    <!-- prod 3 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod3"></div>
+                                    <div class="card-body d-flex" id="total-prod3"></div>
                                 </div>
 
                                 <div id="total" class="d-flex align-items-end border-top p-3 container"> </div>
@@ -89,19 +99,16 @@
         </nav>
     </header>
 
-    <!--Catalogo-->
-    <!--FUNKO 1-->
-    <!--Catalogo-->
     <main>
-
         <section class="py-5 text-center container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light text-white">CityShop</h1>
-                    <p class="lead text-white">Funkos de Pokemon para tu niño interior.</p>
+                    <h1 class="angkor-regular">CityShop</h1>
+                    <p class="lead text-white">Todos los productos que buscas al alcance de un click !</p>
                 </div>
             </div>
         </section>
+
 
 
         <div class="album py-5 bg-light">
@@ -137,8 +144,8 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer class="text-center text-lg-start bg-light text-muted">
+     <!-- Footer -->
+     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -186,8 +193,7 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             <i class="fas fa-gem me-3"></i>CityShop
                         </h6>
-                        <p class="text-justify">Nuestro propósito es llenar tu colección y cumplir tus sueños de
-                            infancia</p>
+                        <p class="text-justify">"Juguetes para crear sonrisas, fomentar sueños y unir familias."</p>
                     </div>
                     <!-- Grid column -->
 
@@ -197,14 +203,11 @@
                         <h6 class="text-uppercase fw-bold mb-4">
                             Productos
                         </h6>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Pikachu</a>
+                                              <p>
+                            <a href="#!" class="text-reset text-decoration-none">Super Promos</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Charmander</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset text-decoration-none">Funko Lapras</a>
+                            <a href="#!" class="text-reset text-decoration-none">Ofertas</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -219,30 +222,38 @@
                     </div>
                     <!-- Grid column -->
 
-                    <!-- Grid column -->
+                    <!-- Contáctenos -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+                        <h6 class="text-uppercase fw-bold mb-4">Contáctenos</h6>
                         <p><i class="fas fa-home me-3"></i>
-                            BUENOS AIRES 1028, Villa María, Argentina.</p>
+                            BUENOS AIRES 1028, Villa María , Argentina.</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i> jorge.cityshop@gmail.com
+                            <i class="fas fa-envelope me-3"></i>
+                            <a href="mailto:jorge.cityshop@gmail.com" style="color: black;">jorge.cityshop@gmail.com</a>
                         </p>
-                        <p><i class="fas fa-phone me-3"></i> +549 353 401-1698</p>
+                        <p>
+                            <a href="https://wa.me/5493534011698?text=Hola,%20gracias%20por%20comunicarte%20con%20CityShop,%20¿cuál%20es%20tu%20consulta?"
+                                style="color: black;">
+                                <i class="bi bi-whatsapp me-3"></i> 353 401-1698
+                            </a>
+                        </p>
                     </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+
             </div>
         </section>
-        <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo & María Victoria </a>
+        <div class="text-center p-4" style="background-color: black;">
+            © 2024 <a class="text-reset fw-bold text-decoration-none"
+                href="https://ranitadelamatrix.github.io/portafolio1/">Gastón Trejo </a> & <a
+                href="https://github.com/MariaVictoria"><img src="../img/logo/logo_MV/sin_fondo/white.png" width="150"
+                    alt="logoMV"></a>
         </div>
         <!-- Copyright -->
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -251,7 +262,7 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-    <script src="../js/offcanvas2.js"></script>
+    <script src="./assets/js/offcanvas.js"></script>
 </body>
 
 </html>
