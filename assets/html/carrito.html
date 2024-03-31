@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <title>CityShop</title>
-    <link href="../img/logo/favicon_io/favicon.ico" rel="icon">
+    <link href="../favicon_io/favicon.ico" rel="icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="../css/styles.css" rel="stylesheet">
 </head>
@@ -21,10 +19,9 @@
         <!--Navegador-->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../../index.html">CityShop</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <a class="navbar-brand" href="./index.html">CityShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
@@ -38,11 +35,11 @@
                             <a class="nav-link" href="../../assets/html/productos.html">Productos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../../assets/html/contactenos.html">Contactenos</a>
+                            <a class="nav-link" href="../../assets/html/contactenos.html">Contáctenos</a>
                         </li>
 
                     </ul>
-
+                    
 
                     </form>
                 </div>
@@ -60,22 +57,20 @@
                 <h2 class="text-center m-5 pb-4">Finalizar Compra</h2>
                 <div class="panel panel-warning">
                     <div class="form-group">
-                        <form>
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre del cliente</label>
-                                <input type="text" class="form-control" id="nombre"
-                                    placeholder="Ingrese su Nombre y Apellido" aria-describedby="nombreReq" required>
-                                <!-- <div id="nombreReq" class="form-text">Ingrese Nombre</div> -->
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="Ingrese Correo Electrónico" aria-describedby="emailReq" required>
-                                <!-- <div id="emailReq" class="form-text">Nunca compartiremos su correo electrónico.</div> -->
-                            </div>
-
-                            <table id="tablaProductos" style="border: 1px solid red;" class="table" id="lista-compra">
-                                <thead id="tablaSubTotal">
+						<form>
+						  <div class="mb-3">
+							<label for="nombre" class="form-label">Nombre del cliente</label>
+							<input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre y Apellido" aria-describedby="nombreReq" required>
+							<!-- <div id="nombreReq" class="form-text">Ingrese Nombre</div> -->
+						  </div>
+						  <div class="mb-3">
+							<label for="email" class="form-label">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="Ingrese Correo Electrónico" aria-describedby="emailReq" required>
+							<!-- <div id="emailReq" class="form-text">Nunca compartiremos su correo electrónico.</div> -->
+						  </div>	
+						  
+						  <table id = "tablaProductos" style="border: 1px solid red;" class="table" id="lista-compra" >
+                                <thead id = "tablaSubTotal">
                                     <tr>
                                         <th scope="col">Productos</th>
                                         <th scope="col">Nombre</th>
@@ -86,7 +81,7 @@
                                     </tr>
 
                                 </thead>
-
+                                
                                 <tbody id="item1">
 
                                 </tbody>
@@ -94,21 +89,21 @@
                                 <tbody id="item2">
 
                                 </tbody>
-
+                                
                                 <tbody id="item3">
 
                                 </tbody>
-                                <tr>
+                                <tr >
                                     <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
                                     <th scope="col">
                                         <p id="subtotal"></p>
-                                    </th>
+                                    </th>  
                                 </tr>
-                                <tr>
+                                <tr >
                                     <th colspan="4" scope="col" class="text-right">SUB TOTAL con Descuento :</th>
                                     <th scope="col">
                                         <p id="subtotalDescuento"></p>
-                                    </th>
+                                    </th>  
                                 </tr>
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">IVA :</th>
@@ -119,28 +114,25 @@
                                 <tr>
                                     <th colspan="4" scope="col" class="text-right">TOTAL :</th>
                                     <th scope="col">
-                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly
-                                            style="background-color: white;"></input>
+                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly style="background-color: white;"></input>
                                     </th>
                                 </tr>
 
                             </table>
-                            <div class="text-center mt-5 pb-4">
-                                <a href="../../index.html" class="btn btn-info btn-block text-white">Seguir
-                                    Comprando</a>
-                                <button class='btn bntVaciar' onclick='vaciarCarrito()'>Eliminar Carrito</button>
-                                <button type="submit" onclick="finalizar()" class="btn btn-success">Finalizar
-                                    Compra</button>
-                            </div>
-                        </form>
-                    </div>
+						  <div class="text-center mt-5 pb-4">
+						   <a href="../../index.html" class="btn btn-info btn-block text-white">Seguir Comprando</a>	
+							<button class='btn bntVaciar' onclick='vaciarCarrito()'>Eliminar Carrito</button>					   
+						    <button type="submit" onclick="finalizar()" class="btn btn-success">Finalizar Compra</button>	
+						</div>
+						</form>     
+					</div>                    
                 </div>
             </div>
         </div>
     </main>
 
-     <!-- Footer -->
-     <footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
         <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
             <!-- Left -->
@@ -150,9 +142,9 @@
             <!-- Left -->
 
             <!-- Right -->
-            <div >
-                <p class="float-end mb-1"  >
-                    <a href="#" class="btn btn-sm btn-dark" >Subir</a>
+            <div>
+                <p class="float-end mb-1">
+                    <a href="#" class="btn btn-sm btn-dark">Subir</a>
                 </p>
                 <a href="" class="me-4 text-reset">
                     <i class="fab fa-facebook-f"></i>
@@ -186,8 +178,9 @@
                     <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                         <!-- Content -->
                         <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-gem me-3"></i>CityShop                        </h6>
-                        <p class="text-justify">"Juguetes para crear sonrisas, fomentar sueños y unir familias."</p>
+                            <i class="fas fa-gem me-3"></i>ATRÁPALOS
+                        </h6>
+                        <p class="text-justify">Nuestro propósito es llenar tu colección y cumplir tus sueños de infancia</p>
                     </div>
                     <!-- Grid column -->
 
@@ -198,13 +191,13 @@
                             Productos
                         </h6>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Productos</a>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Pikachu</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Super Promos</a>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Charmander</a>
                         </p>
                         <p>
-                            <a href="#!" class="text-reset text-decoration-none">Ofertas</a>
+                            <a href="#!" class="text-reset text-decoration-none">Funko Lapras</a>
                         </p>
                     </div>
                     <!-- Grid column -->
@@ -218,39 +211,34 @@
                         <p><a href="#!" class="text-reset text-decoration-none">Carrito de compras</a></p>
                     </div>
                     <!-- Grid column -->
-                    <!-- Contáctenos -->
+
+                    <!-- Grid column -->
                     <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                         <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">Contáctenos</h6>
-                        <p><i class="fas fa-home me-3"></i>
-                            BUENOS AIRES 1028, Villa María , Argentina.</p>
+                        <h6 class="text-uppercase fw-bold mb-4">Contactenos</h6>
+                        <p><i class="fas fa-home me-3"></i>Quilpué. Chile.</p>
                         <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            <a href="mailto:jorge.cityshop@gmail.com" style="color: black;">jorge.cityshop@gmail.com</a>
+                            <i class="fas fa-envelope me-3"></i> info@atrapalos.cl
                         </p>
-                        <p>
-                            <a href="https://wa.me/5493534011698?text=Hola,%20gracias%20por%20comunicarte%20con%20CityShop,%20¿cuál%20es%20tu%20consulta?"
-                                style="color: black;">
-                                <i class="bi bi-whatsapp me-3"></i> 353 401-1698
-                            </a>
-                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +569 72499088</p>
                     </div>
+                    <!-- Grid column -->
                 </div>
-               
+                <!-- Grid row -->
             </div>
         </section>
+        <!-- Section: Links  -->
 
         <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: black;">
-            © 2024 <a class="text-reset fw-bold text-decoration-none" href="#">Gastón Trejo </a> & <a href="https://github.com/MariaVictoria"><img src="./assets/img/logo/logo_MV/sin_fondo/3-removebg-preview.png" width="150" alt="logoMV"></a>
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2022 <a class="text-reset fw-bold text-decoration-none" href="#">Franco Jorquera</a>
         </div>
         <!-- Copyright -->
-    </footer>  
-
+    </footer>      
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.4.min.js"></script>
-    <script src="./assets/js/offcanvas.js"></script>
+    <script src="../../assets/js/storage.js"></script>
 </body>
 </html>

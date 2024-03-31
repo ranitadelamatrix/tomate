@@ -2,7 +2,7 @@
 //Declaración simplificada de productos
 
 id = [1,2,3];
-nombreProducto = ["Funko Pikachu", "Funko Charmander", "Funko Lapras"];
+nombreProducto = ["caminador", "rollers", "basketBall"];
 precio = [localStorage.getItem("precioProducto1"),localStorage.getItem("precioProducto2"),localStorage.getItem("precioProducto3")];
 cantidad = [localStorage.getItem("cantidadProducto1"),localStorage.getItem("cantidadProducto2"),localStorage.getItem("cantidadProducto3")];
 

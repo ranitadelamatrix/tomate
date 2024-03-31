@@ -50,12 +50,12 @@ class carritoDeCompras{
         this.btnPago = document.getElementById("btn-pago-eliminar");
         this.descuento = descuento;
 
-        this.productoEnCarrito1 = document.getElementById("productos-carrito-funko1")
-        this.totalProductosEnCarrito1 = document.getElementById("total-funko1")
-        this.productoEnCarrito2 = document.getElementById("productos-carrito-funko2")
-        this.totalProductosEnCarrito2 = document.getElementById("total-funko2")
-        this.productoEnCarrito3 = document.getElementById("productos-carrito-funko3")
-        this.totalProductosEnCarrito3 = document.getElementById("total-funko3")
+        this.productoEnCarrito1 = document.getElementById("productos-carrito-prod1")
+        this.totalProductosEnCarrito1 = document.getElementById("total-prod1")
+        this.productoEnCarrito2 = document.getElementById("productos-carrito-prod2")
+        this.totalProductosEnCarrito2 = document.getElementById("total-prod2")
+        this.productoEnCarrito3 = document.getElementById("productos-carrito-prod3")
+        this.totalProductosEnCarrito3 = document.getElementById("total-prod3")
     }
 
 
@@ -68,7 +68,7 @@ class carritoDeCompras{
         
         if (parseInt(arregloDeProductos[0].cantidad)>0){
             let precioTotalProducto1 = parseInt(arregloDeProductos[0].cantidad)*parseInt(arregloDeProductos[0].precio);
-        this.productoEnCarrito1.innerHTML = "<p>" + parseInt(arregloDeProductos[0].cantidad) + " x Funko " + arregloDeProductos[0].pkmn + " $" + parseInt(arregloDeProductos[0].precio);
+        this.productoEnCarrito1.innerHTML = "<p>" + parseInt(arregloDeProductos[0].cantidad) + " x prod " + arregloDeProductos[0].pkmn + " $" + parseInt(arregloDeProductos[0].precio);
         this.productoEnCarrito1.innerHTML += "<img src=" + arregloDeProductos[0].img + " width='60' height='60' ></p>";
         this.productoEnCarrito1.innerHTML += "<input type='button' class='btn btn-danger' onclick='eliminaProducto(" + parseInt(arregloDeProductos[0].id) + ")' value='X'>";
         this.totalProductosEnCarrito1.innerHTML = "<p class='text-right'><b>Total $ <input class='sinBorde' type='text' value=" + precioTotalProducto1 + " disabled></b></p>";
@@ -80,7 +80,7 @@ class carritoDeCompras{
 
         if (parseInt(arregloDeProductos[1].cantidad)>0){
             let precioTotalProducto2 = parseInt(arregloDeProductos[1].cantidad)*parseInt(arregloDeProductos[1].precio);
-        this.productoEnCarrito2.innerHTML = "<p>" + parseInt(arregloDeProductos[1].cantidad) + " x Funko " + arregloDeProductos[1].pkmn + " $" + parseInt(arregloDeProductos[1].precio);
+        this.productoEnCarrito2.innerHTML = "<p>" + parseInt(arregloDeProductos[1].cantidad) + " x prod " + arregloDeProductos[1].pkmn + " $" + parseInt(arregloDeProductos[1].precio);
         this.productoEnCarrito2.innerHTML += "<img src=" + arregloDeProductos[1].img + " width='60' height='60' ></p>";
         this.productoEnCarrito2.innerHTML += "<input type='button' class='btn btn-danger' onclick='eliminaProducto(" + parseInt(arregloDeProductos[1].id) + ")' value='X'>";
         this.totalProductosEnCarrito2.innerHTML = "<p class='text-right'><b>Total $ <input class='sinBorde' type='text' value=" + precioTotalProducto2 + " disabled></b></p>";
@@ -92,7 +92,7 @@ class carritoDeCompras{
         
         if (parseInt(arregloDeProductos[2].cantidad)>0){
             let precioTotalProducto3 = parseInt(arregloDeProductos[2].cantidad)*parseInt(arregloDeProductos[2].precio);
-        this.productoEnCarrito3.innerHTML = "<p>" + parseInt(arregloDeProductos[2].cantidad) + " x Funko " + arregloDeProductos[2].pkmn + " $" + parseInt(arregloDeProductos[2].precio);
+        this.productoEnCarrito3.innerHTML = "<p>" + parseInt(arregloDeProductos[2].cantidad) + " x prod " + arregloDeProductos[2].pkmn + " $" + parseInt(arregloDeProductos[2].precio);
         this.productoEnCarrito3.innerHTML += "<img src=" + arregloDeProductos[2].img + " width='60' height='60' ></p>";
         this.productoEnCarrito3.innerHTML += "<input type='button' class='btn btn-danger' onclick='eliminaProducto(" + parseInt(arregloDeProductos[2].id) + ")' value='X'>";
         this.totalProductosEnCarrito3.innerHTML = "<p class='text-right'><b>Total $ <input class='sinBorde' type='text' value=" + precioTotalProducto3 + " disabled></b></p>";
@@ -174,9 +174,9 @@ function vaciarCarrito(){
 
 
 inventario = new storage();
-producto1 = new producto(1,"Pikachu","img_pikachu.jpg",inventario.cantidadDeProductos[0],inventario.precioDeProductos[0]);
-producto2 = new producto(2,"Charmander","img_charmander.jpg",inventario.cantidadDeProductos[1],inventario.precioDeProductos[1]);
-producto3 = new producto(3,"Lapras","img_lapras.jpg",inventario.cantidadDeProductos[2],inventario.precioDeProductos[2]);
+producto1 = new producto(1,"Caminador","caminador.jpg",inventario.cantidadDeProductos[0],inventario.precioDeProductos[0]);
+producto2 = new producto(2,"Charmander","rollers.jpg",inventario.cantidadDeProductos[1],inventario.precioDeProductos[1]);
+producto3 = new producto(3,"BasketBall","basketBall.jpg",inventario.cantidadDeProductos[2],inventario.precioDeProductos[2]);
 arregloDeProductos = [producto1,producto2,producto3];
 inventario.actualizar([parseInt(arregloDeProductos[0].cantidad), parseInt(arregloDeProductos[1].cantidad), parseInt(arregloDeProductos[2].cantidad)]);
 carrito = new carritoDeCompras(0.1,inventario.items); //10% de descuento
