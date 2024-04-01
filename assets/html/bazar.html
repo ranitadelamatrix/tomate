@@ -5,26 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---lo de abajo es el bostrap para que se dspliegue el menu productos-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>CityShop- Carrito</title>
+
+    <title>CityShop- Bazar</title>
     <link href="../favicon_io/favicon.ico" rel="icon">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap Icons CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!--estilos de letras g fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Angkor&family=Madimi+One&family=Oswald:wght@200..700&display=swap"
+        rel="stylesheet">
 
     <link href="../css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/login.css">
-
 </head>
 
 <body>
     <header>
-        <!--Navegador-->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html">CityShop</a>
+                <a class="navbar-brand" href="../../index.html">CityShop</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -52,105 +63,107 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../../assets/html/contactenos.html">Contáctenos</a>
                         </li>
-
                     </ul>
+                    <!-- Formulario de búsqueda -->
+                    <form class="d-flex" id="formulario-princippal" method="post">
+                        <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
+                            Carrito
+                            <span class="badge bg-dark text-white ms-1 rounded-pill">
+                                <input class="colorFondo text-center" type="text" id="cantidadtotales" value="0"
+                                    max="10" min="1" style="width: 30px;">
+                            </span>
+                        </button>
 
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 id="offcanvasRightLabel">Carrito de Compras</h5>
+                                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <!-- Contenido del carrito -->
+                                <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
+                                <div class="card">
+                                    <!-- prod 1 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod1" alt="caminador"></div>
+                                    <div class="card-body d-flex" id="total-prod1"></div>
+                                    <!-- prod 2 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod2" alt="rollers"></div>
+                                    <div class="card-body d-flex" id="total-prod2"></div>
+                                    <!-- prod 3 -->
+                                    <div class="card-body d-flex" id="productos-carrito-prod3" alt="basketBall"></div>
+                                    <div class="card-body d-flex" id="total-prod3"></div>
+                                </div>
 
+                                <div id="total" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="descuento" class="d-flex align-items-end border-top p-3 container"> </div>
+                                <div id="total-descuento" class="d-flex align-items-end border-top p-3 container">
+                                </div>
+                                <div id="btn-pago-eliminar" class="d-flex align-items-end border-top p-3 container">
+
+                                </div>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!--     -->
-    <!--Tabla-->
-    <!--     -->
     <main>
 
-        <div class="py-5 bg-light">
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-6 col-md-8 mx-auto">
+                    <h1 class="angkor-regular">CityShop</h1>
+                    <p class="lead text-white">Todos los productos que buscas al alcance de un click !</p>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="album py-5 bg-light">
             <div class="container">
-                <h2 class="text-center m-5 pb-4">Finalizar Compra</h2>
-                <div class="panel panel-warning">
-                    <div class="form-group">
-                        <form>
-                            <div class="mb-3">
-                                <label for="nombre" class="form-label">Nombre del cliente</label>
-                                <input type="text" class="form-control" id="nombre"
-                                    placeholder="Ingrese su Nombre y Apellido" aria-describedby="nombreReq" required>
-                                <!-- <div id="nombreReq" class="form-text">Ingrese Nombre</div> -->
-                            </div>
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email"
-                                    placeholder="Ingrese Correo Electrónico" aria-describedby="emailReq" required>
-                                <!-- <div id="emailReq" class="form-text">Nunca compartiremos su correo electrónico.</div> -->
-                            </div>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                            <table id="tablaProductos" style="border: 1px solid red;" class="table" id="lista-compra">
-                                <thead id="tablaSubTotal">
-                                    <tr>
-                                        <th scope="col">Productos</th>
-                                        <th scope="col">Nombre</th>
-                                        <th scope="col">Precio</th>
-                                        <th scope="col">Cantidad</th>
-                                        <th scope="col">Sub Total</th>
-                                        <th scope="col">Eliminar</th>
-                                    </tr>
+                    <div class="col-8">
+                        <h2>Bazar</h2>
+                        <p> Explora nuestra amplia selección de productos para el hogar y accesorios variados en el bazar de CityShop. Desde utensilios de cocina hasta artículos de decoración, te ofrecemos todo lo que necesitas para hacer de tu hogar un lugar más acogedor y funcional.
+                        </p>
+<p>
+    En nuestra sección de cocina, encontrarás una gran variedad de utensilios y electrodomésticos que harán que cocinar sea más fácil y divertido. Desde sartenes antiadherentes hasta procesadores de alimentos de última generación, tenemos todo lo necesario para equipar tu cocina como un profesional.
+</p>
+<p>
+    ¿Buscas darle un toque especial a tu hogar? Explora nuestra selección de artículos de decoración, donde encontrarás desde elegantes jarrones y cuadros decorativos hasta cojines y alfombras que añadirán un toque de estilo a cualquier espacio.
+</p>
+<p>
+    No te pierdas nuestra sección de organización, donde encontrarás soluciones inteligentes para mantener tu hogar ordenado y libre de desorden. Desde cestas de almacenamiento hasta organizadores de cajones, te ayudaremos a mantener cada rincón de tu hogar impecable.
 
-                                </thead>
+Además, no olvides echar un vistazo a nuestra colección de productos para el cuidado del hogar, que incluye detergentes, productos de limpieza y accesorios para el mantenimiento del hogar que te ayudarán a mantener todo reluciente y en perfecto estado.
 
-                                <tbody id="item1">
+En el Bazar de CityShop, nos esforzamos por ofrecerte productos de alta calidad a precios accesibles. ¡Descubre todo lo que tenemos para ofrecerte y haz de tu hogar un lugar aún más acogedor y funcional con nuestros productos de bazar!
+</p>
 
-                                </tbody>
+                        <p>
+                            Productos Destacados
 
-                                <tbody id="item2">
-
-                                </tbody>
-
-                                <tbody id="item3">
-
-                                </tbody>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL :</th>
-                                    <th scope="col">
-                                        <p id="subtotal"></p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">SUB TOTAL con Descuento :</th>
-                                    <th scope="col">
-                                        <p id="subtotalDescuento"></p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">IVA :</th>
-                                    <th scope="col">
-                                        <p id="iva"></p>
-                                    </th>
-                                </tr>
-                                <tr>
-                                    <th colspan="4" scope="col" class="text-right">TOTAL :</th>
-                                    <th scope="col">
-                                        <input id="total" name="monto" class="font-weight-bold border-0" readonly
-                                            style="background-color: white;"></input>
-                                    </th>
-                                </tr>
-
-                            </table>
-                            <div class="text-center mt-5 pb-4">
-                                <a href="../../index.html" class="btn btn-info btn-block text-white">Seguir
-                                    Comprando</a>
-                                <button class='btn bntVaciar' onclick='vaciarCarrito()'>Eliminar Carrito</button>
-                                <button type="submit" onclick="finalizar()" class="btn btn-success">Finalizar
-                                    Compra</button>
-                            </div>
-                        </form>
+                            Aquí te presentamos algunos de nuestros productos destacados:
+                        <ul>
+                            <li>[Nombre del Producto 1]: Una descripción breve del producto y por qué es destacado.</li>
+                            <li>
+                                [Nombre del Producto 2]: Una descripción breve del producto y por qué es destacado.</li>
+                            <li> [Nombre del Producto 3]: Una descripción breve del producto y por qué es destacado.
+                            </li>
+                        </ul>
+                        </p>
+                       
                     </div>
                 </div>
             </div>
         </div>
     </main>
-
     <!-- Footer -->
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
@@ -283,7 +296,7 @@
     <script src="../js/offcanvas.js"></script>
     <script src="../js/offcanvas2.js"></script>
     <script src="../js/storage.js"></script>
-
 </body>
+
 
 </html>
