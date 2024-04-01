@@ -1,0 +1,9 @@
+.productos-lista {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-item:hover .productos-lista {
+    display: block;
+}

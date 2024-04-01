@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CityShop - Contact</title>
+    <title>CityShop</title>
     <link href="../favicon_io/favicon.ico" rel="icon">
 
     <!-- Bootstrap CSS -->
@@ -24,12 +24,11 @@
         rel="stylesheet">
 
     <link href="../css/styles.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
     <header>
-        <!--Navegador-->
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="../../index.html">CityShop</a>
@@ -60,9 +59,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="../../assets/html/contactenos.html">Contáctenos</a>
                         </li>
-
                     </ul>
-                    <!--FORMULARIO-->
+                    <!-- Formulario de búsqueda -->
                     <form class="d-flex" id="formulario-princippal" method="post">
                         <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas"
                             data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
@@ -81,16 +79,17 @@
                                     aria-label="Close"></button>
                             </div>
                             <div class="offcanvas-body">
+                                <!-- Contenido del carrito -->
                                 <div id="cantidad" class="d-flex align-items-end border-top p-3 container"></div>
                                 <div class="card">
                                     <!-- prod 1 -->
-                                    <div class="card-body d-flex" id="productos-carrito-prod1"></div>
+                                    <div class="card-body d-flex" id="productos-carrito-prod1" alt="caminador"></div>
                                     <div class="card-body d-flex" id="total-prod1"></div>
                                     <!-- prod 2 -->
-                                    <div class="card-body d-flex" id="productos-carrito-prod2"></div>
+                                    <div class="card-body d-flex" id="productos-carrito-prod2" alt="rollers"></div>
                                     <div class="card-body d-flex" id="total-prod2"></div>
                                     <!-- prod 3 -->
-                                    <div class="card-body d-flex" id="productos-carrito-prod3"></div>
+                                    <div class="card-body d-flex" id="productos-carrito-prod3" alt="basketBall"></div>
                                     <div class="card-body d-flex" id="total-prod3"></div>
                                 </div>
 
@@ -108,6 +107,7 @@
             </div>
         </nav>
     </header>
+
 
     <main>
         <section class="py-5 text-center container">
@@ -216,14 +216,12 @@
 
                         <p>
                         <ul>
+
                             <li> <a href="bazar.html" class="text-reset text-decoration-none">Bazar</a></li>
-                            <li><a href="belleza.html" class="text-reset text-decoration-none">Productos de Belleza</a>
-                            </li>
-                            <li><a href="ferreteria.html" class="text-reset text-decoration-none">Ferretería</a></li>
-                            <li><a href="hogar.html" class="text-reset text-decoration-none">Hogar</a></li>
-                            <li><a href="juguetes.html" class="text-reset text-decoration-none">Juguetería</a></li>
                             <li><a href="libreria.html" class="text-reset text-decoration-none">Librería</a></li>
+                            <li><a href="juguetes.html" class="text-reset text-decoration-none">Juguetería</a></li>
                             <li><a href="ofertas.html" class="text-reset text-decoration-none">Ofertas</a></li>
+
 
                         </ul>
                         </p>
@@ -282,11 +280,8 @@
         crossorigin="anonymous"></script>
 
     <!-- Scripts personalizados -->
+    <script src="./assets/js/offcanvas.js"></script>
     <script src="../js/event.js"></script>
-    <script src="../js/offcanvas.js"></script>
-    <script src="../js/offcanvas2.js"></script>
-    <script src="../js/storage.js"></script>
-
 </body>
 
 </html>

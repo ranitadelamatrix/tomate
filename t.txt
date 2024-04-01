@@ -1,0 +1,111 @@
+
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>CityShop
+                    </h6>
+                    <p class="text-justify">"Juguetes para crear sonrisas, fomentar sueños y unir familias."</p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Productos
+                    </h6>
+
+                    <p>
+                    <ul>
+                        <li> <a href="./assets/html/bazar.html" class="text-reset text-decoration-none">Bazar</a>
+                        </li>
+                        <li><a href="./assets/html/belleza.html" class="text-reset text-decoration-none">Productos
+                                de Belleza</a>
+                        </li>
+                        <li><a href="./assets/html/ferreteria.html"
+                                class="text-reset text-decoration-none">Ferretería</a></li>
+                        <li><a href="./assets/html/hogar.html" class="text-reset text-decoration-none">Hogar</a>
+                        </li>
+                        <li><a href="./assets/html/juguetes.html"
+                                class="text-reset text-decoration-none">Juguetería</a></li>
+                        <li><a href="./assets/html/libreria.html"
+                                class="text-reset text-decoration-none">Librería</a></li>
+                        <li><a href="./assets/html/ofertas.html" class="text-reset text-decoration-none">Ofertas</a>
+                        </li>
+
+                    </ul>
+                    </p>
+                </div>
+
+                <!-- Contáctenos -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contáctenos</h6>
+                    <p><i class="fas fa-home me-3"></i>
+                        BUENOS AIRES 1028, Villa María , Argentina.</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        <a href="mailto:jorge.cityshop@gmail.com" style="color: black;">jorge.cityshop@gmail.com</a>
+                    </p>
+                    <p>
+                        <a href="https://wa.me/5493534011698?text=Hola,%20gracias%20por%20comunicarte%20con%20CityShop,%20¿cuál%20es%20tu%20consulta?"
+                            style="color: black;">
+                            <i class="bi bi-whatsapp me-3"></i> 353 401-1698
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Section: Links  -->  
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span><a href="./assets/html/productos.html" class="btn btn-sm btn-success">Ver más productos</a></span>
+        </div>
+
+        <!-- Right -->
+        <div>
+            <p class="float-end mb-1">
+                <a href="#" class="btn btn-sm btn-dark">Subir</a>
+            </p>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-facebook" style="color: bisque;"></i> <!-- Clase corregida para Facebook -->
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-twitter" style="color: bisque;"></i> <!-- Clase corregida para Twitter -->
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-google" style="color: bisque;"></i> <!-- Clase corregida para Google -->
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-instagram" style="color: bisque;"></i> <!-- Clase corregida para Instagram -->
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-linkedin" style="color: bisque;"></i> <!-- Clase corregida para LinkedIn -->
+            </a>
+            <a href="#" class="me-4 text-reset">
+                <i class="bi bi-github" style="color: bisque;"></i> <!-- Clase corregida para GitHub -->
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: black;">
+        © 2024 <a class="text-reset fw-bold text-decoration-none"
+            href="https://ranitadelamatrix.github.io/portafolio1/">Gastón Trejo </a> & <a
+            href="https://github.com/MariaVictoria"><img src="./assets/img/logo/logo_MV/sin_fondo/white.png"
+                width="150" alt="logoMV"></a>
+    </div>
+    <!-- Copyright -->
+</footer>
