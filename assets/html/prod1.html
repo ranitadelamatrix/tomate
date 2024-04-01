@@ -13,7 +13,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <link href="../css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 
 <body>
@@ -35,12 +38,16 @@
                             <a class="nav-link" href="../../assets/html/nosotros.html">Nosotros</a>
                         </li>
                         <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link" href="#" id="toggleProductos">Productos</a>
                             <ul class="productos-lista" id="productosDesplegados" style="display:none;">
-                                <li><a href="ferreteria.html">Ferreteria</a></li>
-                                <li><a href="#">Hogar</a></li>
-                                <li><a href="#">Productos de belleza</a></li>
-                                <li><a href="#">Bazar</a></li>
+                                <li> <a href="bazar.html" style="color: aliceblue;">Bazar</a></li>
+                                <li><a href="belleza.html" style="color: aliceblue;">Productos de Belleza</a></li>
+                                <li><a href="ferreteria.html" style="color: aliceblue;">Ferretería</a></li>
+                                <li><a href="hogar.html" style="color: aliceblue;">Hogar</a></li>
+                                <li><a href="juguetes.html" style="color: aliceblue;">Juguetería</a></li>
+                                <li><a href="libreria.html" style="color: aliceblue;">Librería</a></li>
+                                <li><a href="ofertas.html" style="color: aliceblue;">Ofertas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -224,12 +231,14 @@
 
                         <p>
                         <ul>
-
                             <li> <a href="bazar.html" class="text-reset text-decoration-none">Bazar</a></li>
-                            <li><a href="libreria.html" class="text-reset text-decoration-none">Librería</a></li>
+                            <li><a href="belleza.html" class="text-reset text-decoration-none">Productos de Belleza</a>
+                            </li>
+                            <li><a href="ferreteria.html" class="text-reset text-decoration-none">Ferretería</a></li>
+                            <li><a href="hogar.html" class="text-reset text-decoration-none">Hogar</a></li>
                             <li><a href="juguetes.html" class="text-reset text-decoration-none">Juguetería</a></li>
+                            <li><a href="libreria.html" class="text-reset text-decoration-none">Librería</a></li>
                             <li><a href="ofertas.html" class="text-reset text-decoration-none">Ofertas</a></li>
-
 
                         </ul>
                         </p>
@@ -288,8 +297,11 @@
         crossorigin="anonymous"></script>
 
     <!-- Scripts personalizados -->
-    <script src="./assets/js/offcanvas.js"></script>
     <script src="../js/event.js"></script>
+    <script src="../js/offcanvas.js"></script>
+    <script src="../js/offcanvas2.js"></script>
+    <script src="../js/storage.js"></script>
+
 </body>
 
 </html>
