@@ -40,7 +40,7 @@
     <!--CSS-->
     <link href="./assets/css/styles.css" rel="stylesheet">
     <link href="./assets/css/login.css" rel="stylesheet">
-
+    
 
     <title>CityShop - Index</title>
     <link href="./assets/favicon_io/favicon.ico" rel="icon">
@@ -87,19 +87,9 @@
 
                     <!--FORMULARIO-->>
                     <form class="d-flex" id="formulario-princippal" method="post">
-                        <a href="login.html">
                         <button class="btn btn-danger px-4" type="button"
                             onclick="document.getElementById('id01').style.display='block'"><i class="bi bi-person"></i>
-                            Login</button>&nbsp;&nbsp;</a>
-                        <button class="btn btn-success bntCarrito" type="button" data-bs-toggle="offcanvas"
-                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-cart"></i>
-                            Carrito
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">
-                                <input class="colorFondo text-center" type="text" id="cantidadtotales" value="0"
-                                    max="10" min="1" style="width: 30px;">
-                            </span>
-                        </button>
-
+                            Login</button>&nbsp;&nbsp;
                         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                             aria-labelledby="offcanvasRightLabel">
                             <div class="offcanvas-header">
@@ -151,102 +141,67 @@
                    <h4> En CityShop, nos enorgullece ofrecer una experiencia de compra única para nuestros clientes; somos
                     tu destino desde artículos para el hogar hasta regalos únicos, pasando por productos de decoración y accesorios de moda, en CityShop encontrarás todo lo que estás buscando y mucho más. </h4>
                 <div class="album py-5 bg-light">
-                    <h3 class="text-center pb-4" id="dm-serif"> Nuestras Ofertas</h3>
+                    
                 </div>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 
-                    <!--prod 1-->
-                    <div class="col">
-                        <div class="card shadow-sm text-center">
-                            <a class="text-center" href="#">
-                                <img src="./assets/img/caminador.jpg" class="tamagnoImagenes productoVisible" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-text text-center"><b>Caminador</b></p>
-                                <p class="text-center small" id="precio-prod1"> $10.000</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group boton-centrado">
-                                        <input type="button" name="prod1" id="btn-prod1" class="btn btn-danger"
-                                            onclick="agregarProducto(1)" value="Agregar al carro">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--prod 2-->
-                    <div class="col">
-                        <div class="card shadow-sm text-center">
-                            <a class="text-center" href="./assets/html/prod2.html">
-                                <img src="./assets/img/rollers.jpg" class="tamagnoImagenes productoVisible" alt="">
-                            </a>
-                            <div class="card-body">
-                                <p class="card-text text-center"><b>Rollers</b></p>
-                                <p class="text-center small" id="precio-prod2"> $20.000</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="btn-group boton-centrado">
-                                        <input type="button" name="prod2" id="btn-prod2" class="btn btn-danger"
-                                            onclick="agregarProducto(2)" value="Agregar al carro">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--prod 3-->
-                    <div class="col">
-                        <div class="card shadow-sm">
-                            <a class="text-center" href="./assets/html/prod3.html">
-                                <img src="./assets/img/basketBall.jpg" class="tamagnoImagenes productoVisible" alt="">
-                            </a>
-
-                            <div class="card-body">
-                                <p class="card-text text-center" id="precio-prod1"><b>Balon de Basquet</b></p>
-                                <p class="text-center small"> $30.000</p>
-                                <div class="btn-group boton-centrado">
-                                    <input type="button" name="prod3" id="btn-prod3" class="btn btn-danger"
-                                        onclick="agregarProducto(3)" value="Agregar al carro">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  
             </div>
         </div>
-    </main>
+  
 
-    <!-- Login -->
-    <div id="id01" class="modal-1">
-        <form class="modal-content-1 animate" action="#" method="post">
-            <div class="imgcontainer">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                    title="Close Modal">&times;</span>
-                <img src="./assets/img/img_avatar.jpg" alt="Avatar" class="avatar">
-            </div>
-            <div class="container">
-                <table class="table">
+ <!--FORMULARIO-->
+<form class="d-flex" id="formulario-princippal" text-align="center" method="post">
+    <button class="btn btn-primary px-4" type="button" onclick="document.getElementById('id01').style.display='block'">
+        <i class="bi bi-person"></i> Iniciar Sesión / Registrarse
+    </button>
+    &nbsp;&nbsp;
+   
+</form>
+
+<!-- Modal para Iniciar Sesión / Registrarse -->
+<div id="id01" class="modal-1">
+    <form class="modal-content-1 animate" action="#" method="post">
+        <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Cerrar">&times;</span>
+            <img src="./assets/img/img_avatar.jpg" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+            <table class="table">
+                <tr>
+                    <td><label for="uname"><b>Nombre de Usuario</b></label></td>
+                    <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="psw"><b>Contraseña</b></label></td>
+                    <td><input class="login-req" type="password" placeholder="Ingrese Contraseña" name="psw" required></td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                        <button type="submit" class="btn btn-success btn-loggin">Iniciar sesión</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger btn-loggin">Cancelar</button>
+                    </td>
+                </tr>
+                <tr>
                     <tr>
-                        <td><label for="uname"><b>Nombre</b></label></td>
-                        <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required>
+                        <td colspan="2">
+                            ¿No tienes una cuenta? <button type="button" class="btn btn-link" id="btnMostrarRegistro">Registrarse</button>
                         </td>
                     </tr>
-                    <tr>
-                        <td><label for="psw"><b>Password</b></label></td>
-                        <td><input class="login-req" type="password" placeholder="Ingrese Password" name="psw" required>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>&nbsp;</td>
-                        <td><button type="submit" class="btn btn-success btn-loggin">Iniciar sesión </button>
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                class="btn btn-danger btn-loggin">Cancelar</button>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </form>
+                    <!-- Formulario de registro (oculto por defecto) -->
+<form class="modal-content-1 animate" action="#" method="post" style="display: none;" id="registroForm">
+    <!-- Contenido del formulario de registro -->
+</form>
+
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
+
     </div>
-
+</main>
     <footer class="text-center text-lg-start bg-light text-muted">
         <!-- Section: Social media -->
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
@@ -363,13 +318,15 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
 
-    <!-- Scripts personalizados -->
-    <script src="./assets/js/event.js"></script>
-    <script src="./assets/js/offcanvas.js"></script>
-    <script src="./assets/js/offcanvas2.js"></script>
-    <script src="./assets/js/storage.js"></script>
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
     <script src="./assets/js/login.js"></script>
-
 </body>
 
 </html>
