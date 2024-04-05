@@ -149,38 +149,34 @@
             </div>
         </div>
   
-<!-- Modal para Iniciar Sesión / Registrarse -->
-<div id="id01" class="modal-1">
-    <form class="modal-content-1 animate" action="#" method="post">
-        <div class="imgcontainer">
-            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Cerrar">&times;</span>
-            <img src="./assets/img/img_avatar.jpg" alt="Avatar" class="avatar">
-        </div>
-        <div class="container">
-            <table class="table">
-                <tr>
-                    <td><label for="uname"><b>Nombre de Usuario</b></label></td>
-                    <td><input class="login-req" type="text" placeholder="Ingrese Usuario" name="uname" required></td>
-                </tr>
-                <tr>
-                    <td><label for="psw"><b>Contraseña</b></label></td>
-                    <td><input class="login-req" type="password" placeholder="Ingrese Contraseña" name="psw" required></td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                    <td>
-                        <button type="submit" class="btn btn-success btn-loggin">Iniciar sesión</button>
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="btn btn-danger btn-loggin">Cancelar</button>
-                    </td>
-                </tr>
-                <tr>
-                    <tr>
-                        <td colspan="2">
-                            ¿No tienes una cuenta? <a href="login_nuevo.html" class="btn btn-link" id="btnMostrarRegistro">Registrarse</a>
-                        </td>
-                        
-                    </tr>
 
+ <!--FORMULARIO-->
+<form class="d-flex" id="formulario-princippal" text-align="center" method="post">
+    <button class="btn btn-primary px-4" type="button" onclick="document.getElementById('id01').style.display='block'">
+        <i class="bi bi-person"></i> Iniciar Sesión / Registrarse
+    </button>
+    &nbsp;&nbsp;
+   
+</form>
+
+<!-- Modal Registrarse -->
+<body>
+    <h2>Registro de Usuario</h2>
+    <form id="registrationForm">
+        <div>
+            <label for="username">Nombre de Usuario:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <button type="submit">Registrarse</button>
+    </form>
 
                 </tr>
             </table>
