@@ -1,0 +1,11 @@
+{
+  "name": "tomate",
+  "version": "1.0.0",
+  "description": "Tareas:\r -   revisar\r     * h4\r     * palabra Cityshop\r     * verificar repeticion de  Bootstrap CSS:la versión 4.5.2 y otra desde la versión 5.0.2\r     * Repetición de Font Awesome CSS:  la versión 5.15.4 y otra desde la versión 6.0.0",
+  "main": "login.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
